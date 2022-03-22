@@ -5,6 +5,7 @@ const router = express.Router();
 
 app.use(express.static("views"));
 app.use(express.static(__dirname+"public"));
+app.use(express.static(__dirname+"css"));
 
 router.get('/',function(req,res){
     res.sendFile(path.join(__dirname,'views/index.html'));

@@ -1,0 +1,3 @@
+const routeMap = new RouteMap {
+    "/"
+}

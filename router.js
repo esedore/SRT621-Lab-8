@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const router = express.Router();
+
 
 app.use(express.static("views"));
 app.use(express.static("public"));
@@ -24,6 +24,7 @@ app.get('/book3',function(req,res){
 app.get('/home',function(req,res){
     res.sendFile(path.join(__dirname,'views/index.html'));
 })
+module.exports = router;
 
 app.use('/',router);
 app.listen(process.env.port || 3000);

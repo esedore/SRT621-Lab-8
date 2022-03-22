@@ -4,6 +4,7 @@ const path = require('path');
 const router = express.Router();
 
 app.use(express.static("views"));
+app.use(express.static("public"));
 
 app.get('/',function(req,res){
     res.sendFile(path.join(__dirname,'views/index.html'));

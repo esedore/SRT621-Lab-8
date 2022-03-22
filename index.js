@@ -1,9 +1,9 @@
 const http = require('http');
 const hostname = '127.0.0.1';
 const port = 3000;
-const routes = require('router.js');
+const routes = require('./router.js');
 const express = require('express');
-const path = require('./router');
+const path = require('path');
 
 const app = express();
 
